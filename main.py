@@ -37,7 +37,7 @@ class BMICalculationInput(BaseModel):
         ge=0.1,
         examples=[1.75],
         description=(
-            "Enter your height."
+            "Enter your height in feet if using imperial or meters if using metric."
         ),
     )
     weight: float = Field(
@@ -46,7 +46,7 @@ class BMICalculationInput(BaseModel):
         ge=0.1,
         examples=[70.0],
         description=(
-            "Enter your weight."
+            "Enter your weight pounds if using imperial or kilograms if using metric."
         ),
     )
 
